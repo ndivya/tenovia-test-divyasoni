@@ -121,10 +121,11 @@
                     <strong>Filter By Categories</strong>
                 </a>
                 <div>
-                    <a class="list-group-item" data-toggle="collapse" data-target="#AAA" data-parent="#menu">
-                        category<span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                    <a class="list-group-item bplus" data-toggle="collapse" data-target="#AAA" data-parent="#menu">
+                        category 
                     </a>
                     <div id="AAA" class="sublinks collapse">
+
                         <a class="list-group-item small">
                               Essential plains
                         </a>
@@ -138,8 +139,8 @@
                               kids
                         </a>
                     </div>
-                <a class="list-group-item" data-toggle="collapse" data-target="#BBB" data-parent="#menu">
-                        rooms <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                <a class="list-group-item bplus" data-toggle="collapse" data-target="#BBB" data-parent="#menu">
+                        rooms  
                     </a>
                     <div id="BBB" class="sublinks collapse">
                         <a class="list-group-item small">
@@ -155,8 +156,8 @@
                               kitchen
                         </a>
                     </div>
-                    <a class="list-group-item" data-toggle="collapse" data-target="#ccc" data-parent="#menu">
-                        color <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                    <a class="list-group-item bplus" data-toggle="collapse" data-target="#ccc" data-parent="#menu">
+                        color  
                     </a>
                     <div id="ccc" class="sublinks collapse">
                         <a class="list-group-item small">
@@ -509,4 +510,11 @@ $(e.target)
 }
 $('#accordion').on('hidden.bs.collapse', toggleChevron);
 $('#accordion').on('shown.bs.collapse', toggleChevron);
+
+$(".list-group-item.small").click(function(){
+   $(this).toggleClass("click");
+});
+$(".bplus").click(function(){
+   $(this).toggleClass("minus");
+});
 </script>
