@@ -1,0 +1,100 @@
+ 
+/* Large Devices, Wide Screens */
+ @media only screen and (max-width : 1200px) {
+     .owl-pagination{
+        display: block;
+    }
+     .owl-buttons {
+        display: none;
+    }
+}
+/* Extra Small Devices, Phones */
+ @media all and (min-width: 768px) and (max-width: 1024px){
+     .tabs{
+        width: 100%;
+    }
+     .main{
+        padding: 0 10px;
+    }
+     .owl-pagination{
+        display: block;
+    }
+     .owl-buttons {
+        display: none;
+    }
+     .content-box{
+        height: auto;
+    }
+     .content-box-block{
+        bottom: 0;
+        position: inherit;
+    }
+     li.active a::after{
+        top: 23px !important;
+    }
+     ul#tabs-nav li.active a{
+        font-size: 14px;
+        line-height: 16px;
+    }
+     #tabs-nav li a{
+        font-size: 12px;
+    }
+}
+/* Custom, iPhone Retina */
+ @media all and (max-width : 767px) {
+     .tabs{
+        width: 100%;
+    }
+     .main{
+        padding: 0 10px;
+    }
+     ul#tabs-nav li.active a{
+        font-size: 12px;
+        line-height: 14px;
+    }
+     #tabs-nav li a{
+        font-size: 12px;
+    }
+     .ovelay{
+        display: block;
+    }
+     .owl-pagination{
+        display: block;
+    }
+     .owl-buttons {
+        display: none;
+    }
+     li.active a::after{
+        top: 42px !important
+    }
+     .content-box{
+        height: auto;
+    }
+     .owl-carousel .owl-item{
+        text-align: center;
+    }
+     .content-box-block{
+        bottom: 0;
+        position: inherit;
+    }
+     .ovelay-inner > ul li.last{
+        font-size: 12px;
+    }
+     .content-box h3{
+        font-size: 16px;
+    }
+     .inner-content span{
+        font-size: 12px;
+    }
+     .title h1{
+        font-size:25px;
+    }
+     .title p{
+        font-size: 14px;
+    }
+}
+ @media (min-width: 320px) and (max-width: 568px){
+     .ovelay-inner > ul li{
+        width: 18%;
+    }
+}
